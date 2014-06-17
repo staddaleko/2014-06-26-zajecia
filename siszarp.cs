@@ -2,3 +2,5 @@
 
 int i =1;
 Console.readline();
+
+//gdzie użycie i ?
