@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cwiczenie2", "cwiczenie2\cwiczenie2.csproj", "{A89D6EBE-AB6D-4A50-963D-23C4680C22EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cwiczenie 1", "..\cwiczenie 1\cwiczenie 1\cwiczenie 1.csproj", "{26281A5D-D773-474D-9B80-C281EE500000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cwiczenie3", "..\cwiczenie3\cwiczenie3\cwiczenie3.csproj", "{A46D8D7A-F66E-427B-AC7A-164414F204F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A89D6EBE-AB6D-4A50-963D-23C4680C22EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A89D6EBE-AB6D-4A50-963D-23C4680C22EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A89D6EBE-AB6D-4A50-963D-23C4680C22EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26281A5D-D773-474D-9B80-C281EE500000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26281A5D-D773-474D-9B80-C281EE500000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26281A5D-D773-474D-9B80-C281EE500000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26281A5D-D773-474D-9B80-C281EE500000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46D8D7A-F66E-427B-AC7A-164414F204F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46D8D7A-F66E-427B-AC7A-164414F204F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46D8D7A-F66E-427B-AC7A-164414F204F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46D8D7A-F66E-427B-AC7A-164414F204F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
