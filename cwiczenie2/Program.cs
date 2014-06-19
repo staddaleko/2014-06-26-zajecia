@@ -19,6 +19,10 @@ namespace cwiczenie2
             z = Convert.ToDouble(Console.ReadLine());
             v = (4 * x - y) / (3 * (z * z + 1));
             Console.WriteLine("wartosc wyrazenia wynosi {0}", v);
+            
+            Console.ReadKey();
+            Console.WriteLine("To, co? Narka? :)");
+            
         }
     }
 }
