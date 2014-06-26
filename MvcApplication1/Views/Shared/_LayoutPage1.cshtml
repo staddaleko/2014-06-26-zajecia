@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/reset.css" rel="stylesheet" />
+    <link href="~/css/layout.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!--header -->
+    <header>
+        <div class="wrapper">
+            <h1><a href="index.html" id="logo">Superior.com</a></h1>
+            <form id="search" method="post">
+                <fieldset>
+                    <div class="bg"><input class="input" type="text" value="Search" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Search' ) this.value=''"></div>
+                </fieldset>
+            </form>
+        </div>
+        <nav>
+            <ul id="menu">
+                @Html.ActionLink("<span>O galerii</span>", "Index", "Galeria");
+                @*<li class="active"><a href="galeria/Index"><span>O galerii</span></a></li>*@
+                @Html.ActionLink("<span>Zdjęcia</span>", "Index", "Galeria");
+                @*<li><a href="galeria/photos"><span>Zdjęcia</span></a></li>*@
+                @Html.ActionLink("<span>Logowanie</span>", "Index", "Galeria");
+                @*<li><a href="galeria/login"><span>Logowanie</span></a></li>*@
+            </ul>
+        </nav>
+        <div id="slider">
+            <ul class="items">
+                <li>
+                    <img src="images/img1.jpg" alt="">
+                    <div class="banner">
+                        <span class="title"><span class="color2">We Have</span><span class="color1">Propositions</span><span>For Everybody</span></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                        <a href="#" class="button1">Read More</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/img2.jpg" alt="">
+                    <div class="banner">
+                        <span class="title"><span class="color2">Fresh Ideas</span><span class="color1">For Growing</span><span>Your Business</span></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                        <a href="#" class="button1">Read More</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/img3.jpg" alt="">
+                    <div class="banner">
+                        <span class="title"><span class="color2">The Best</span><span class="color1">You Can Find</span><span>On The Web</span></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                        <a href="#" class="button1">Read More</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--header end-->
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
