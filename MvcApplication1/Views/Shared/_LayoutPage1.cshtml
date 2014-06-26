@@ -33,7 +33,8 @@
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="@Url.Action("Index", "Galeria")"><span>O galerii</span></a></li>
+
+                @*<li class="active">*@<li><a href="@Url.Action("Index", "Galeria")"><span>O galerii</span></a></li>
 @*<li><span>@Html.ActionLink("O galerii", "Index", "Galeria")</span></li>*@
 @*<li class="active"><a href="galeria/Index"><span>O galerii</span></a></li>*@
                 <li><a href="@Url.Action("Photos", "Galeria")"><span>Zdjęcia</span></a></li>
@@ -90,6 +91,6 @@
         <!-- {%FOOTER_LINK} -->
     </footer>
     <!--footer end-->
-    <script type="text/javascript"> Cufon.now(); </script>
+    
 </body>
 </html>
