@@ -191,6 +191,18 @@
   <ItemGroup>
     <Content Include="js\PIE.php" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Galeria\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Galeria\Photos.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Galeria\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Galeria\Zdjecie.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

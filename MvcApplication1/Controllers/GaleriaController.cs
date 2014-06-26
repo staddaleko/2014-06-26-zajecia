@@ -14,12 +14,20 @@ namespace Galeria.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
         public ActionResult Zdjecie(int Id)
         {
             Zdjecie_c is_z = new Zdjecie_c();
             return View("Zdjecie", is_z);
+        }
+        public ActionResult Photos()
+        {
+            return View("Photos");
+        }
+        public ActionResult Login()
+        {
+            return View("Login");
         }
 
     }

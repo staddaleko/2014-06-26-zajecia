@@ -21,15 +21,15 @@
         </div>
         <nav>
             <ul id="menu">
-                <li>@Html.ActionLink("<span>O galerii</span>", "Index", "Galeria")</li>
+                <li>@Html.ActionLink("O galerii", "Index", "Galeria")</li>
 @*<li class="active"><a href="galeria/Index"><span>O galerii</span></a></li>*@
-                <li>@Html.ActionLink("<span>Zdjęcia</span>", "Photos", "Galeria")</li>
+                <li>@Html.ActionLink("Zdjęcia", "Photos", "Galeria")</li>
 @*<li><a href="galeria/photos"><span>Zdjęcia</span></a></li>*@
-                <li>@Html.ActionLink("<span>Logowanie</span>", "Login", "Galeria")</li>
+                <li>@Html.ActionLink("Logowanie", "Login", "Galeria")</li>
 @*<li><a href="galeria/login"><span>Logowanie</span></a></li>*@
             </ul>
         </nav>
-        <div id="slider">
+        @*<div id="slider">
             <ul class="items">
                 <li>
                     <img src="images/img1.jpg" alt="">
@@ -56,11 +56,24 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div>*@
     </header>
     <!--header end-->
     <div>
         @RenderBody()
     </div>
+    <!--footer -->
+    <footer>
+        <ul id="icons">
+            <li class="first">Follow Us:</li>
+            <li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip" title="Twitter"><img src="images/icon2.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip" title="Picasa"><img src="images/icon3.jpg" alt=""></a></li>
+            <li><a href="#" class="normaltip" title="YouTube"><img src="images/icon4.jpg" alt=""></a></li>
+        </ul>
+        Superior.com &copy; 2011 <br>Website Template by <a href="http://www.templatemonster.com/" target="_blank">TemplateMonster.com</a><br>
+        <!-- {%FOOTER_LINK} -->
+    </footer>
+    <!--footer end-->
 </body>
 </html>
