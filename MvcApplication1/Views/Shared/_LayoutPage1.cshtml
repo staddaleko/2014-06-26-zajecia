@@ -4,9 +4,21 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
     <link href="~/css/reset.css" rel="stylesheet" />
     <link href="~/css/layout.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
+    
+    <script src="~/js/jquery-1.6.js"></script>
+    <script src="~/js/cufon-yui.js"></script>
+    <script src="~/js/cufon-replace.js"></script>
+    <script src="~/js/Vegur_300.font.js"></script>
+    <script src="~/js/PT_Sans_700.font.js"></script>
+    <script src="~/js/PT_Sans_400.font.js"></script>
+    <script src="~/js/tms-0.3.js"></script>>
+    <script src="~/js/tms_presets.js"></script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/atooltip.jquery.js"></script>
 </head>
 <body>
     <!--header -->
@@ -21,11 +33,14 @@
         </div>
         <nav>
             <ul id="menu">
-                <li>@Html.ActionLink("O galerii", "Index", "Galeria")</li>
+                <li><a href="@Url.Action("Index", "Galeria")"><span>O galerii</span></a></li>
+@*<li><span>@Html.ActionLink("O galerii", "Index", "Galeria")</span></li>*@
 @*<li class="active"><a href="galeria/Index"><span>O galerii</span></a></li>*@
-                <li>@Html.ActionLink("Zdjęcia", "Photos", "Galeria")</li>
+                <li><a href="@Url.Action("Photos", "Galeria")"><span>Zdjęcia</span></a></li>
+@*<li><span>@Html.ActionLink("Zdjęcia", "Photos", "Galeria")</span></li>*@
 @*<li><a href="galeria/photos"><span>Zdjęcia</span></a></li>*@
-                <li>@Html.ActionLink("Logowanie", "Login", "Galeria")</li>
+                <li><a href="@Url.Action("Login", "Galeria")"><span>Logowanie</span></a></li>
+@*<li><span>@Html.ActionLink("Logowanie", "Login", "Galeria")</span></li>*@
 @*<li><a href="galeria/login"><span>Logowanie</span></a></li>*@
             </ul>
         </nav>
@@ -75,5 +90,6 @@
         <!-- {%FOOTER_LINK} -->
     </footer>
     <!--footer end-->
+    <script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
