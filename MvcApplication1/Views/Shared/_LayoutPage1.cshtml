@@ -12,7 +12,7 @@
     <!--header -->
     <header>
         <div class="wrapper">
-            <h1><a href="index.html" id="logo">Superior.com</a></h1>
+            <h1 id="logo">@Html.ActionLink("Gallery COM","Index","Galeria")</h1>
             <form id="search" method="post">
                 <fieldset>
                     <div class="bg"><input class="input" type="text" value="Search" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Search' ) this.value=''"></div>
@@ -21,12 +21,12 @@
         </div>
         <nav>
             <ul id="menu">
-                @Html.ActionLink("<span>O galerii</span>", "Index", "Galeria");
-                @*<li class="active"><a href="galeria/Index"><span>O galerii</span></a></li>*@
-                @Html.ActionLink("<span>Zdjęcia</span>", "Index", "Galeria");
-                @*<li><a href="galeria/photos"><span>Zdjęcia</span></a></li>*@
-                @Html.ActionLink("<span>Logowanie</span>", "Index", "Galeria");
-                @*<li><a href="galeria/login"><span>Logowanie</span></a></li>*@
+                <li>@Html.ActionLink("<span>O galerii</span>", "Index", "Galeria")</li>
+@*<li class="active"><a href="galeria/Index"><span>O galerii</span></a></li>*@
+                <li>@Html.ActionLink("<span>Zdjęcia</span>", "Photos", "Galeria")</li>
+@*<li><a href="galeria/photos"><span>Zdjęcia</span></a></li>*@
+                <li>@Html.ActionLink("<span>Logowanie</span>", "Login", "Galeria")</li>
+@*<li><a href="galeria/login"><span>Logowanie</span></a></li>*@
             </ul>
         </nav>
         <div id="slider">
