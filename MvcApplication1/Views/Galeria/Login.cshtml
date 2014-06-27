@@ -32,14 +32,12 @@
                 </div>
                 <div class="wrapper">
                     <span>@Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })</span>
-                   
-                        @Html.CheckBoxFor(m => m.RememberMe)
-                   
-                    
-
+                    @Html.CheckBoxFor(m => m.RememberMe)
                 </div>
-                <input class="button1" type="submit" value="Log in" />
             </div>
+            
+            <input class="button1" type="submit" value="Log in" />
+
             <p>
                 @Html.ActionLink("Zarejestruj się", "Register") jeżeli nie masz jeszcze konta...
             </p>
