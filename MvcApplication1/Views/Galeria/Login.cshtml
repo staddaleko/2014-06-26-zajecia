@@ -5,32 +5,45 @@
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
 
-@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
-{
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+<article id="content">
 
-    <fieldset>
-        <legend>Log in Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-                @Html.ValidationMessageFor(m => m.Password)
-            </li>
-            <li>
-                @Html.CheckBoxFor(m => m.RememberMe)
-                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
-            </li>
-        </ol>
-        <input class="button1" type="submit" value="Log in" />
-    </fieldset>
-    <p>
-        @Html.ActionLink("Register", "Register") if you don't have an account.
-    </p>
-}
+
+    <div class="wrapper">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "Contactform" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            <div>
+                <div class="wrapper">
+                    <span>@Html.LabelFor(m => m.UserName)</span>
+                    <div class="bg">
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "Input" })
+                        @Html.ValidationMessageFor(m => m.UserName)
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <span>@Html.LabelFor(m => m.Password, new { @class = "Input" })</span>
+                    <div class="bg">
+                        @Html.PasswordFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password)
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <span>@Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })</span>
+                   
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                   
+                    
+
+                </div>
+                <input class="button1" type="submit" value="Log in" />
+            </div>
+            <p>
+                @Html.ActionLink("Zarejestruj się", "Register") jeżeli nie masz jeszcze konta...
+            </p>
+
+        }
+    </div>
+</article>
