@@ -25,7 +25,7 @@
     <!--header -->
     <header>
         <div class="wrapper">
-            <h1 id="logo">@Html.ActionLink("Gallery COM","Index","Galeria")</h1>
+            <h1>@Html.ActionLink("Gallery COM", "Index", "Galeria", new { @id = "logo" })</h1>
             <form id="search" method="post">
                 <fieldset>
                     <div class="bg"><input class="input" type="text" value="Search" onblur="if(this.value=='') this.value='Search'" onfocus="if(this.value =='Search' ) this.value=''"></div>
@@ -92,6 +92,6 @@
         <!-- {%FOOTER_LINK} -->
     </footer>
     <!--footer end-->
-    
+    <script src="~/js/atooltip.my.js"></script>
 </body>
 </html>
