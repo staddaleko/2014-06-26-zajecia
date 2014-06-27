@@ -29,6 +29,10 @@ namespace Galeria.Controllers
         {
             return View("Login");
         }
+        public ActionResult Register()
+        {
+            return View("Register");
+        }
 
     }
 }
