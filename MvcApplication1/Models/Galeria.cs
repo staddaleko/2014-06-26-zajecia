@@ -14,9 +14,13 @@ namespace Galeria
     public class Zdjecie_c
     {
         [Key]
+        [Required]
         public int Id_z { set; get; }
+        [Required]
         public string Wl { set; get; }
+        [Required]
         public string Tytul { set; get; }
+        [Required]
         public byte[] Zdjecie { set; get; }
         public DateTime Data_W { set; get; }
         public virtual ICollection<Komentarz_c> Komentarze { set; get; }
@@ -26,8 +30,10 @@ namespace Galeria
     public class Komentarz_c
     {
         [Key]
+        [Required]
         public int Id_k { set; get; }
         [Key]
+        [Required]
         [ForeignKey("Zdjecie_c.Id_z")]
         public int Id_z { set; get; }
         public DateTime Data_w { set; get; }
