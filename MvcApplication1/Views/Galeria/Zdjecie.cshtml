@@ -11,7 +11,18 @@
 </head>
 <body>
     <div>
-        
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(model => model.Tytul)
+            @Html.TextBoxFor(model => model.Tytul)
+            @Html.LabelFor(model => model.Zdjecie)
+    <input type="file" name="Zdjecie" value=" " />
+            @Html.TextBoxFor(model => model.Wl, new { hidden = "hidden", @value=""})
+            @Html.TextBoxFor(model => model.Data_w, new { hidden = "hidden", @value = DateTime.Now })
+    <input type="text" name="Wl" value= "" hidden="hidden" />
+    <input type="submit" value="wstaw" />
+
+        }
     </div>
 </body>
 </html>
